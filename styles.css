@@ -1,4 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* header area styles */
+.header{
+    background: rgba(255, 144, 14, 0.1);
 }
