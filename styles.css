@@ -55,6 +55,7 @@ body {
 
 .title {
     text-align: center;
+    padding: 50px 228px;
 }
 
 .title h1 {
@@ -420,9 +421,10 @@ textarea {
     .nav li{
         margin-left: 0;
     }
-    .title p{
-        padding: 0 35px;
+    .title{
+        padding: 0px 15px;
     }
+
     .header img{
         width: 95%;
     }
@@ -482,7 +484,43 @@ textarea {
 
 /* medium device responsive not done due to lack of time */
 @media screen and (min-width:577px) and (max-width:992px) {
-    body {
-        background-color: white;
+    .navbar, .title, .feature-1, .feature-2, .facts, .contact, .sponsors, .footer {
+        padding: 50px 30px;
+    }
+    .navbar h3{
+        font-size: 25px;
+    }
+    .nav li{
+        margin-left: 20px;
+    }
+ 
+    .title h1{
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .header img{
+        width: 90%;
+    }
+    .feature-2{
+        flex-direction: column;
+    }
+    .feature2-text, .feature2-image{
+        width: 90%;
+    }
+    .experience{
+        left: 25px;
+        bottom: 75px;
+    }
+    .facts-score{
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .sponsor-logos{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
     }
 }
