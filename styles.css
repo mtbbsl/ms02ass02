@@ -306,28 +306,32 @@ body {
 }
 
 /* contact area styles */
-.contact{
+.contact {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     gap: 50px;
     background: var(--background);
     padding: 50px 200px;
     margin: 50px 0;
 }
-.contact .section-title{
+
+.contact .section-title {
     text-align: left;
 }
-.contact input[type="text"], input[type="email"], textarea{
+
+.contact input[type="text"],
+input[type="email"],
+textarea {
     margin-bottom: 24px;
     border: 0;
     width: 90%;
     padding: 18px 30px;
 }
 
-.contact a{
+.contact a {
     text-decoration: none;
 }
+
 .section-title {
     text-align: center;
     margin-bottom: 20px;
@@ -399,4 +403,86 @@ body {
     font-weight: 400;
     font-size: 20px;
     color: var(--text);
+}
+
+/* smaller mobile device responsive */
+@media screen and (max-width: 576px) {
+    .navbar{
+        flex-direction: column;
+        padding: 50px 0;
+        text-align: center;
+    }
+    .nav ul{
+        flex-direction: column;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .nav li{
+        margin-left: 0;
+    }
+    .title p{
+        padding: 0 35px;
+    }
+    .header img{
+        width: 95%;
+    }
+    .feature-1{
+        flex-direction: column;
+        padding: 50px 0;
+    }
+    .feature1-images{
+        grid-template-columns: auto;
+        width: 75%;
+    }
+    .feature1-text{
+        width: 75%;
+    }
+    .feature-2{
+        flex-direction: column;
+        padding: 50px 0;
+    }
+    .feature2-text{
+        width: 90%;
+        margin-left: 15px;
+    }
+    .feature2-image {
+        width: 90%;
+        margin-left: 15px;
+    }
+    .experience{
+        left: 15px;
+        bottom: 50px;
+    }
+    .facts{
+        flex-direction: column;
+        padding: 50px 35px;
+        text-align: center;
+    }
+
+    .facts-score{
+        flex-wrap: wrap;
+        gap: 45px;
+    }
+    .contact{
+        flex-direction: column;
+        padding: 50px 35px;
+    }
+    .sponsors{
+        padding: 50px 35px;
+    }
+    .sponsor-logos{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .footer{
+        flex-direction: column;
+        padding: 50px 35px;
+    }
+}
+
+/* medium device responsive not done due to lack of time */
+@media screen and (min-width:577px) and (max-width:992px) {
+    body {
+        background-color: white;
+    }
 }
