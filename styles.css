@@ -260,7 +260,7 @@ body {
     margin-bottom: 15px;
 }
 
-.facts-text p{
+.facts-text p {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -270,71 +270,85 @@ body {
 .facts-score {
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
 .score {
-    width: 240px;
-    height: 240px;
+    min-width: 150px;
+    padding: 45px 35px;
+    margin: 0 20px;
     border: 2px solid var(--button);
     border-radius: 10px;
     text-align: center;
+    align-items: center;
+    transition: scale 0.5s ease-in;
 }
 
-.score img{
+.score:hover {
+    background-color: var(--background);
+    scale: 120%;
+}
+
+.score img {
     width: 45px;
     height: 45px;
 }
-.score h3{
+
+.score h3 {
     font-weight: 600;
     font-size: 45px;
     color: var(--menu);
 }
 
-.score p{
+.score p {
     font-weight: 600;
     font-size: 20px;
     color: var(--text);
 }
 
 /* sponsors area styles */
-.sponsors{
+.sponsors {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 50px;
     padding: 50px 250px;
 }
-.sponsor-text{
+
+.sponsor-text {
     text-align: center;
 }
-.sponsor-text h3{
+
+.sponsor-text h3 {
     font-weight: 700;
     font-size: 45px;
     color: var(--title);
     margin-bottom: 15px;
 }
 
-.sponsor-text p{
+.sponsor-text p {
     font-weight: 400;
     font-size: 16px;
     color: var(--text);
 }
+
 .sponsor-logos {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.sponsor-logos img{
+
+.sponsor-logos img {
     filter: grayscale(100%);
 }
+
 /* footer area styles */
-.footer{
+.footer {
     display: flex;
     justify-content: center;
     padding: 50px 250px;
 }
-.footer-text{
+
+.footer-text {
     width: 100%;
     padding: 20px 0;
     text-align: center;
@@ -342,7 +356,8 @@ body {
     border-radius: 8px;
     margin-bottom: 150px;
 }
-.footer-text p{
+
+.footer-text p {
     font-weight: 400;
     font-size: 20px;
     color: var(--text);
